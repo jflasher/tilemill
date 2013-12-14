@@ -117,6 +117,7 @@ view.prototype.layerToggleStatus = function(ev) {
         model.set({ 'status': 'off' });
         $(ev.currentTarget).closest('li').addClass('status-off');
     }
+    this.model.save();
     return false;
 };
 
